@@ -7,4 +7,5 @@ Actualmente esta pagina le falta lo que es:
 * Correcciones de la interfaz
 * Pruebas de errores
 
+
 Y una gran cantidad de implementaciones y correcciones para completar este proyecto.
