@@ -136,3 +136,10 @@ input{
 	padding: 21px;
 	background-color: var(--menu);
 }
+
+/* ========Historia======= */
+
+.histo{
+	margin-left: 2%;
+	margin-right: 2%;
+}
