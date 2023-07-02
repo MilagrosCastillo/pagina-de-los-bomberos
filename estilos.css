@@ -4,10 +4,13 @@
 }
 
 
+
+
 body{
 	color: #ffff;
 	background-color: var(--fondo);
 	margin: unset;
+	font-family: sans-serif;
 }
 select{
 	background-color: transparent;
@@ -79,14 +82,14 @@ input{
 	height: 350px;
 }
 .cuadro{
-	margin-left:5%;
-	margin-bottom: 30%;
-	margin-top: 2.7%;
-	border: 1px solid;
-	border-radius: 7px;
-	padding: 7px;
-	border-color: var(--menu);
-	background-color: var(--fondo);
+		margin-left:5%;
+		margin-bottom: 30%;
+		margin-top: 2.7%;
+		border: 1px solid;
+		border-radius: 7px;
+		padding: 7px;
+		border-color: var(--menu);
+		background-color: var(--fondo);
 }
 .submit{
 	background-color: var(--fondo);
