@@ -1,8 +1,8 @@
+@import "flecha-izquierda.css";
 :root{
 	--fondo: #171717;
 	--menu: #ff0000;
 }
-
 
 
 
@@ -171,42 +171,6 @@ input{
 .re-menu li a:hover{
 	background-color: #ba0000;
 }
-/* ========Icono========= */
-.gg-arrow-left {
- box-sizing: border-box;
- position: relative;
- display: block;
- transform: scale(var(--ggs,1));
- width: 22px;
- height: 22px
-}
-
-.gg-arrow-left::after,
-.gg-arrow-left::before {
- content: "";
- display: block;
- box-sizing: border-box;
- position: absolute;
- left: 3px
-}
-
-.gg-arrow-left::after {
- width: 8px;
- height: 8px;
- border-bottom: 2px solid;
- border-left: 2px solid;
- transform: rotate(45deg);
- bottom: 7px
-}
-
-.gg-arrow-left::before {
- width: 16px;
- height: 2px;
- bottom: 10px;
- background: currentColor;
-}
-/* ========================== */
-
 .regresar{
 	display: flex;
 }
