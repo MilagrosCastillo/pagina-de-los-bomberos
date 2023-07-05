@@ -1,4 +1,4 @@
-@import "flecha-izquierda.css";
+@import url('./iconos/flecha-izquierda.css');
 :root{
 	--fondo: #171717;
 	--menu: #ff0000;
@@ -138,7 +138,19 @@ input{
 }
 
 /* ========Historia======= */
+.historia{
+	font-family: sans-serif;
+	line-height: 170%;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.historia p{
+	margin-top: 7%;
+}
 
+
+
+/*======= Visión y Misión =======*/
 .histo{
 	margin-left: 2%;
 	margin-right: 2%;
@@ -173,4 +185,11 @@ input{
 }
 .regresar{
 	display: flex;
+}
+/*======= Organigrama =======*/
+.orgaimg{
+	width: 90%;
+	display:block;
+	margin: auto;
+	padding: 15px;
 }
