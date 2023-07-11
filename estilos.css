@@ -121,6 +121,7 @@ input{
 .text2{
 	grid-area: text2;
 	margin-left: 2%;
+	line-height: 140%;
 }
 .imagen{
 	grid-area: imagen;
