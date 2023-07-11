@@ -98,6 +98,7 @@ input{
 	padding-left: 7.7%;
 	padding-right: 7.7%;
 	padding-bottom:3.5%;
+	transition: background-color .5s;
 }
 .submit:hover{
 	background-color: var(--menu);
