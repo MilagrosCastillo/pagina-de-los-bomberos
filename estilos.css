@@ -147,13 +147,20 @@ input{
 .historia p{
 	margin-top: 7%;
 }
-
-
-<<<<<<< HEAD
-=======
+/*========= Historia =======*/
+.historia{
+	font-family: sans-serif;
+	line-height: 170%;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.historia p{
+	margin-top: 7%;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+}
 
 /*======= Visión y Misión =======*/
->>>>>>> parent of ea78497 (Revert "reorganizacion y retoques")
 .histo{
 	margin-left: 2%;
 	margin-right: 2%;
