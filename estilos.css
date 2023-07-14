@@ -7,6 +7,9 @@
 	--texicon: #fff;
 	--fondoclaro: #FFF;
 }
+html[data-theme='dark'] {
+    --fondo: #FFF;
+}
 /*==== Modo oscuro y claro ====*/
 .oscuro{
 	background-color: transparent;
@@ -20,8 +23,9 @@ body{
 	color: var(--texicon);
 	margin: unset;
 	font-family: sans-serif;
+	transition: .5s;
 }
-.dark-mode{
+.light-mode{
 	background-color: var(--fondoclaro);
 	color: var(--fondo);
 }
