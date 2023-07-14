@@ -1,16 +1,35 @@
 @import url('./iconos/flecha-izquierda.css');
+@import url("iconos/pro/css/all.css");
+
 :root{
 	--fondo: #171717;
 	--menu: #ff0000;
+	--texicon: #fff;
+	--fondoclaro: #FFF;
 }
-
-
-
+/*==== Modo oscuro y claro ====*/
+.oscuro{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--texicon);
+	font-size: 16px;
+}
 body{
-	color: #ffff;
 	background-color: var(--fondo);
+	color: var(--texicon);
 	margin: unset;
 	font-family: sans-serif;
+}
+.dark-mode{
+	background-color: var(--fondoclaro);
+	color: var(--fondo);
+}
+
+/*=============================*/
+
+.slogan{
+	color: var(--texicon);
 }
 select{
 	background-color: transparent;
@@ -34,7 +53,7 @@ input{
 	background-color: var(--menu);
 }
 .menu{
-	margin-left: 35%;
+	margin-left: 30%;
 }
 .me-menu{
 	font-family: sans-serif;
@@ -137,6 +156,7 @@ input{
 	margin: unset;
 	padding: 21px;
 	background-color: var(--menu);
+	color: var(--texicon);
 }
 
 /* ========Historia======= */
