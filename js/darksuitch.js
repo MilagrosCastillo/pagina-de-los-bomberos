@@ -12,11 +12,13 @@ function darkMode() {
 document.addEventListener('DOMContentLoaded', function() {
    if (localStorage.getItem('light-mode') === 'true') {
      darkMode();
-  } else {
-	Document.body.classList.remove('light-mode');
-  }
+  } 
 });
-
+document.removeEventListener('DOMContentLoaded', function() {
+   if (localStorage.getItem('light-mode') === 'false') {
+     darkMode();
+  } 
+});
 
 
 
