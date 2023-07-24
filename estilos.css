@@ -31,6 +31,10 @@ body{
 }
 
 /*=============================*/
+::selection{
+	color: var(--texicon);
+	background-color: var(--menu);
+}
 
 .slogan{
 	color: var(--texicon);
