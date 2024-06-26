@@ -4,21 +4,102 @@
     <meta charset="UTF-8">
     <title>Historia de los Bomberos</title>
     <link rel="icon" href="./img/Imagen3.png">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- <link rel="stylesheet" type="text/css" href="estilos.css"> -->
+    <link rel="stylesheet" href="estilos-nav.css">
+    <script src="tailwind-cdn.js"></script>
+    <script src="tailwind.config2.js"></script>
   </head>
-<body>
- <div class="me-hi">
-    <nav class="menu-h">
-       <ul class="re-menu">
-          <li><a class="regresar" href="index.html"><i class="gg-arrow-left"></i>Regresar</a></li>
-       </ul>
-    </nav>
- </div> 
-  <section class="historia">
+<body class="bg-gray-950 text-slate-200">
+
+
+<header class="bg-firetruck text-slate-200">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-0.5 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="index.html" class="-m-1.5 p-1.5">
+        <img class="h-14 w-auto" src="./img/Imagen3.png" alt="">
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-5">
+      <ul class="hidden lg:flex lg:gap-x-5 list-none w-full">
+        <li id="despl" class="float-left relative md:w-auto"><span class="cursor-pointer block text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Historia</span>
+          <ul id="plus" class="left-0 absolute top-8 z-10">
+            <li><a href="historia.html" class="block bg-firetruck px-2 py-2 hover:bg-red-950">Resumen</a></li>
+            <li><a href="himno.html" class="block bg-firetruck px-2 py-2 hover:bg-red-950">Himno</a></li>
+            <li><a href="" class="block bg-firetruck px-2 py-2 hover:bg-red-950">Cargos</a></li>
+          </ul>
+        </li>
+        <li class="float-left relative md:w-auto"><a href="vision-y-mision.html" class="block text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Vision y Mision</a></li>
+        <li class="float-left relative md:w-auto"><a href="organigrama.html" class="block text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Organigrama</a></li>
+        <li class="float-left relative md:w-auto"><a href="#" class="block text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Redes Sociales</a></li>
+        <li class="float-left relative md:w-auto"><a href="#" class="block text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Telefonos</a></li>
+      </ul>
+    </div>   
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end"> 
+      <a href="dashboard.html" class="text-sm font-semibold leading-6 hover:bg-red-950 px-2 py-2 rounded-lg">Log in <span aria-hidden="true">&rarr;</span></a>
+    </div>  
+  </nav> 
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="lg:hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <div class="-mx-3">
+              <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                Product
+                <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <!-- 'Product' sub-menu, show/hide based on menu state. -->
+              <div class="mt-2 space-y-2" id="disclosure-1">
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Automations</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch demo</a>
+                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact sales</a>
+              </div>
+            </div>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <div class="py-6">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section class="historia px-10">
     <center>
-      <h2 >Historia</h2>
+      <h2 class="text-2xl font-bold text-red-300 py-3">Historia</h2>
       <hr>
-      <p>Bajo el lema disciplina, aplicación y lealtad el cuartel de Bomberos Coronel (B)
+      <p class="my-6">Bajo el lema disciplina, aplicación y lealtad el cuartel de Bomberos Coronel (B)
            “Alipio Atilano Ramírez” Nace durante los años 1978-1979 cuando comienzan a realizarse
             algunas conversaciones entre un grupo de personas, pertenecientes al club de leones 
             Betijoque y a la asociación de comerciantes e industriales del distrito Rafael Rangel 
@@ -37,7 +118,7 @@
              donde pudiera funcionar provisionalmente el cuerpo de bomberos y es así que se consigue 
              un local donde funcionaba el liceo “Luis Carrillo” ubicado por la vía del hospital y que 
              fue acondicionado para poder darle la utilidad que se perseguía.</p>
-             <p>El 16 de diciembre de 1981 según orden general  número 1, se crea la primera guardia, 
+             <p class="my-6">El 16 de diciembre de 1981 según orden general  número 1, se crea la primera guardia, 
               el 16 de noviembre de 1982 según resolución numero 21 ascendido al grado inmediato de 
               teniente el sargento ayudante Alipio Ramírez y nombrado comandante del cuerpo por salida 
               del coronel Ángel Villasmil, durante el año 1982 fue adquirido en calidad de donación un 
@@ -48,7 +129,7 @@
               bastante duro, ya que se presentaron bastantes dificultades al momento de estructurarse 
               como cuerpos de bomberos, pero gracias a un grupo de valientes y aplicados bomberos 
               pudieron solventar estas adversidades.</p>
-              <p>En el año de 1989 fueron trasladados los funcionarios, materiales, equipos y 
+              <p class="my-6">En el año de 1989 fueron trasladados los funcionarios, materiales, equipos y 
                   vehículos a una nueva estructura, un cuartel de bomberos con las condiciones 
                   mínimas para funcionar, ya que el anterior no las poseía, otra diligencia por el 
                   comandante Alipio Ramírez y los miembros del consejo de administración, esto durante 
@@ -58,7 +139,7 @@
                   el terreno donde se encuentra ubicada la estructura física fue donado por la familia 
                   Pérez, quien sin escatimar esfuerzos dieron esta donación para que pudieran construir
                    la institución bomberil.</p>
-                   <p>El año de 1997 asume la comandancia el sub teniente Jorge Vásquez por salida del 
+                   <p class="my-6">El año de 1997 asume la comandancia el sub teniente Jorge Vásquez por salida del 
                       teniente coronel Alipio Ramírez por su respectiva jubilación, en el año 1999 
                       asume la comandancia en sub teniente Pedro Luis Flores, el 4 de junio de ese 
                       mismo año 1999 deja de existir físicamente por enfermedad el teniente coronel 
