@@ -168,6 +168,11 @@ input{
 	background-color: var(--menu);
 	color: var(--texicon);
 }
+.login{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
 
 /* ========Historia======= */
 .historia{
