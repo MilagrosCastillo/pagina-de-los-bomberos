@@ -10,33 +10,48 @@
  <img src="cintillo.jpg" width="100%" height="20%">
 
  
-    <center><h1> REGISTRO DEL PERSONAL JUBILADO</h1></center>
+<center>
+  <h1> REGISTRO DEL PERSONAL JUBILADO</h1>
+</center>
 
-    <form action="registro.html" method="post">
+<form name="form-registro" action="registro.html" method="post">
 
-        <fieldset>
-            <legend>DATOS PERSONAL</legend><br>
+  <fieldset>
+      <legend>DATOS PERSONAL</legend>
+
+      <br>
+
 			<label for="nom">Nombres</label>
 			<input type="text" name="nom" size="20">
+
 			<label for= "ape">Apellidos</label>
-			<input type="text" name="ape" size="20"><br><br>
+			<input type="text" name="ape" size="20">
+
+      <br>
+
 			<label for="cedula">Cedula</label>
 			<input type="tel" name="cedula" size="10">
+
 			<label for="fnto">Fecha Nacimiento</label>
-			<input type="date" name="fnto" size="10"> 
-			<label for="edad">Edad</label>
-			<input type="text" name="edad" size="5">
-			<label for="sexo">Sexo</label>
-			F<input type="radio" id="femenino" value="F">
-			M<input type="radio" id="masculino" value="M"><br><br>
+			<input type="date" name="fnto" size="10">
+
+			<label for="genero">Genero</label>
+      <select name="genero" id="">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+      </select>
+
+      <br>
+
 			<label for="edoci">Estado Civil</label>
 			<select name="edoci" id="edoci">
-			<option value="edoci">SELECCIONE</option>
-			<option value="edoci">CASADO(A)</option>
-			<option value="edoci">CONCUBINO(A)</option>
-			<option value="edoci">SOLTERO(A)</option>
-			<option value="edoci">VIUDO(A)</option>
+			  <option value="">SELECCIONE</option>
+			  <option value="casado">CASADO(A)</option>
+			  <option value="concubino">CONCUBINO(A)</option>
+			  <option value="soltero">SOLTERO(A)</option>
+			  <option value="viudo">VIUDO(A)</option>
 			</select>
+
 			<label for="nacionali">Nacionalidad</label>
 			<select name="nacionali" id="nacionali">
 			<option value="nacionali">SELECCIONE</option>
@@ -117,18 +132,35 @@
 				<option value="sangre">AB-</option>
 				<option value="sangre">O+</option>
 				<option value="sangre">O-</option>
-			</select><br><br>
-			<label for="disca">Posee Alguna Discapacidad</label>
-			SI<input type="radio" id="si" value="si">
-			NO<input type="radio" id="no" value="no"><br><br>
-			<label for="espdisca">Especifique</label>
-			<input type="text" name="esdisca" size="30"><br><br>
-			<label for="patolo">Posee Alguna Enfermedad Patologica</label>
-			SI<input type="radio" id="si" value="si">
-			NO<input type="radio" id="no" value="no"><br><br>
-			<label for="espato">Especifique</label>
-			<input type="text" name="espato" size="30"><br><br>
-			<label for="enfp">Posee Alguna Alergia</label>
+			</select>
+
+      <br><br>
+      <label for="disca">Posee Alguna Discapacidad</label>
+      <label for="disc">Si</label>
+      <input type="radio" name="disc" id="s" value="si" onclick="hideShow()">
+      <label for="disc">No</label>
+      <input type="radio" name="disc" id="n" value="no" aria-selected="true" onclick="hideShow()">
+		
+      <div class="espdisca" id="espdisca" style="display: none;">
+        <label for="espdiscatext">Especifique</label>
+        <input type="text" name="espdiscatext">
+      </div>
+			<br><br>
+			
+      <label for="patolo">Posee Alguna Enfermedad Patologica</label>
+      <label for="patolo">Si</label>
+			<input type="radio" id="si" name="patolo" value="si">
+      <label for="patolo">No</label>
+			<input type="radio" id="no" name="patolo" value="no">
+      <br><br>
+			
+      <div class="discpatolo">
+        <label for="espato">Especifique</label>
+        <input type="text" name="espato" id="espdiscpatolo">
+      </div>
+			<br><br>
+			
+      <label for="enfp">Posee Alguna Alergia</label>
 			SI<input type="radio" id="si" value="si">
 			NO<input type="radio" id="no" value="no"><br><br>
 
@@ -172,5 +204,6 @@
 			<center><input type="submit" name="btn1" value="Guardar"></center>
 
     </form><br>
+    <script src="./js/selectionresgistro.js"></script>
 </body>
 </html>

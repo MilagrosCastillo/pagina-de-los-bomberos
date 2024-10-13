@@ -1,3 +1,10 @@
+<?php
+
+include('./conexión.php');
+
+$varuser = $_SESSION["usuario"];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
