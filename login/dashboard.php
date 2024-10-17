@@ -6,14 +6,14 @@ $varuser = $_SESSION["usuario"];
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="tailwind-cdn.js"></script>
-  <script src="tailwind.config2.js"></script>
-  <link rel="icon" href="./img/Imagen3.png">
   <title>Administrador</title>
+  <link rel="icon" href="../img/Imagen3.png">
+  <script src="../tailwind-cdn.js"></script>
+  <script src="../tailwind.config2.js"></script>
 </head>
 <body>
  <div class="min-h-full">
@@ -22,7 +22,7 @@ $varuser = $_SESSION["usuario"];
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="img/Imagen3.png" alt="Your Company">
+            <img class="h-8 w-8" src="../img/logo.png" alt="Your Company">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
@@ -99,7 +99,7 @@ $varuser = $_SESSION["usuario"];
       <div class="border-t border-gray-700 pb-3 pt-4">
         <div class="flex items-center px-5">
           <div class="flex-shrink-0">
-            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <img class="h-10 w-10 rounded-full" src="" alt="">
           </div>
           <div class="ml-3">
             <div class="text-base font-medium leading-none text-white">Tom Cook</div>

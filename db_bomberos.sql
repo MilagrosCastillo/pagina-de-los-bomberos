@@ -13,5 +13,3 @@ insert into usersadmin (usuario, pass) values ('Milagros','1234');
 -- select * from usersadmin;
 
 select * from usersadmin where usuario = 'Milagros';
-
-select * from  usersadmin;
