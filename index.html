@@ -7,6 +7,7 @@
   <link rel="icon" href="./img/Imagen3.png">
   <link rel="stylesheet" type="text/css" href="estilos-nav.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./iconos/import-icons.css">
   <link rel="stylesheet" href="bootstrap.min5.3.2.css">
   <script src="tailwind-cdn.js"></script><!--Tailwind puro-->
   <script src="tailwind.config2.js"></script><!--Configuracion de todos los colores y elementos personalizados de tailwind-->
@@ -43,7 +44,10 @@
     </div>   
     <div class="logi"> 
        
-      <button class="hamburg">Menu</button>
+      <button class="hamburg relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"><!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg></button>
     </div>  
   </nav> 
   <!-- Mobile menu, show/hide based on menu open state. -->
